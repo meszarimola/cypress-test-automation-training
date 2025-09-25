@@ -1,0 +1,15 @@
+# Node_modules
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS fájlok
+.DS_Store
+Thumbs.db
