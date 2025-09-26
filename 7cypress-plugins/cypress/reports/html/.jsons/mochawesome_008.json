@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-22T10:31:17.121Z",
+    "end": "2025-09-22T10:31:20.971Z",
+    "duration": 3850,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9c174424-14e4-44c2-bf04-447b0977bcd4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dealing-with-xpath.cy.js",
+      "file": "cypress\\e2e\\dealing-with-xpath.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ec20ba22-99a7-4b7c-9029-0819e7bbbee1",
+          "title": "XPath példa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "keres XPath segítségével",
+              "fullTitle": "XPath példa keres XPath segítségével",
+              "timedOut": null,
+              "duration": 2816,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ultimateqa.com/filling-out-forms/\");\ncy.xpath('//input[@id=\"et_pb_contact_name_0\"]').type(\"Teszt Elek\");\ncy.xpath('//textarea[@id=\"et_pb_contact_message_0\"]').type(\"Ez egy teszt \\xFCzenet.\");\ncy.xpath('//button[@name=\"et_builder_submit_button\"]').first().click();\ncy.contains(\"Thanks for contacting us\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "2ad161c6-5fff-47d8-bd5b-10a72b5688cc",
+              "parentUUID": "ec20ba22-99a7-4b7c-9029-0819e7bbbee1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ad161c6-5fff-47d8-bd5b-10a72b5688cc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2816,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-22T10:31:12.680Z",
+    "end": "2025-09-22T10:31:16.124Z",
+    "duration": 3444,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3581b65-aee5-47e8-86fb-911dbc7d1ab0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dealing-with-snapshots.cy.js",
+      "file": "cypress\\e2e\\dealing-with-snapshots.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "234b126c-61a5-44db-815b-bc348364d4bf",
+          "title": "Visual regression – UltimateQA űrlap",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "oldal kinézete ne változzon",
+              "fullTitle": "Visual regression – UltimateQA űrlap oldal kinézete ne változzon",
+              "timedOut": null,
+              "duration": 1577,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\dealing-with-snapshots.cy.js\\\\ultimateqa-form-fullpage.png\",\n      \"\\\\dealing-with-snapshots.cy.js\\\\Visual regression – UltimateQA űrlap -- oldal kinézete ne változzon (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.viewport(1366, 768);\ncy.visit(\"https://ultimateqa.com/filling-out-forms/\");\ncy.wait(500);\ncy.matchImageSnapshot(\"ultimateqa-form-fullpage\");\ncy.get(\"#et_pb_contact_form_0\").matchImageSnapshot(\"contact-form\");",
+              "err": {
+                "message": "Error: Image was NaN% different from saved snapshot with undefined different pixels.\nSee diff for details: undefined",
+                "estack": "Error: Image was NaN% different from saved snapshot with undefined different pixels.\nSee diff for details: undefined\n    at Context.eval (https://ultimateqa.com/__cypress/tests?p=cypress\\support\\e2e.js:1911:23)\n    at getRet (https://ultimateqa.com/__cypress/runner/cypress_runner.js:121565:20)\n    at tryCatcher (https://ultimateqa.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://ultimateqa.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://ultimateqa.com/__cypress/runner/cypress_runner.js:121576:66)\n    at Context.then (https://ultimateqa.com/__cypress/runner/cypress_runner.js:121827:21)\n    at wrapped (https://ultimateqa.com/__cypress/runner/cypress_runner.js:141533:19)\n    at <unknown> (https://ultimateqa.com/__cypress/runner/cypress_runner.js:147469:15)\n    at tryCatcher (https://ultimateqa.com/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "7b5ea0c8-c46b-47c6-8907-43ec43498a86",
+              "parentUUID": "234b126c-61a5-44db-815b-bc348364d4bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7b5ea0c8-c46b-47c6-8907-43ec43498a86"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1577,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

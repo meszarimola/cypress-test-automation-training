@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-22T10:31:05.606Z",
+    "end": "2025-09-22T10:31:11.382Z",
+    "duration": 5776,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5ab6565e-4e58-435d-9567-a228af512ecd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dealing-with-oauth.cy.js",
+      "file": "cypress\\e2e\\dealing-with-oauth.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7d2ea6f-15ef-4833-98fe-df90e5c3cb6d",
+          "title": "Deals OAuth login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "logs in with Google (via plugin)",
+              "fullTitle": "Deals OAuth login logs in with Google (via plugin)",
+              "timedOut": null,
+              "duration": 5708,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\dealing-with-oauth.cy.js\\\\Deals OAuth login -- logs in with Google (via plugin) (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://deals.androidauthority.com/\");\ncy.get(\"a#signIn\").click();\ncy.get('button[label=\"Continue With Google\"]').click();\ncy.loginWithGoogle();\ncy.visit(\"https://deals.androidauthority.com/\");\ncy.contains(/(My Account|Profile|Logout)/i).should(\"exist\");",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'replaceAll')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'replaceAll')\n    at toPosix (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:113052:56)\n    at Object.getSourcePosition (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:100889:80)\n    at getSourceDetails (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:99800:83)\n    at getSourceDetailsForLine (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:99867:25)\n    at apply (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:18470:17)\n    at wrapper (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:23357:16)\n    at arrayMap (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:18631:23)\n    at lodash.map (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:27600:14)\n    at Object.getSourceStack (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:99925:64)\n    at Object.enhanceStack (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:77798:60)\n    at $Cy.fail (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:141262:64)\n    at onError (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:147693:22)\n    at tryCatcher (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:2256:14)",
+                "diff": null
+              },
+              "uuid": "7ba57f3b-551c-466e-9053-47b892d5a7d4",
+              "parentUUID": "e7d2ea6f-15ef-4833-98fe-df90e5c3cb6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7ba57f3b-551c-466e-9053-47b892d5a7d4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5708,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "2core-concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+    "axe-core": "^4.10.3",
+    "cypress": "^15.2.0",
+    "cypress-axe": "^1.7.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-social-logins": "^1.14.2",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.25.10"
+  }
+}

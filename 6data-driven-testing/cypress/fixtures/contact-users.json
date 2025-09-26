@@ -1,0 +1,5 @@
+[
+  { "name": "Teszt Elek",   "message": "Ez az első üzenet." },
+  { "name": "Kiss Katalin", "message": "Második próbaüzenet." },
+  { "name": "John Doe",     "message": "Harmadik próba, angol szöveggel." }
+]

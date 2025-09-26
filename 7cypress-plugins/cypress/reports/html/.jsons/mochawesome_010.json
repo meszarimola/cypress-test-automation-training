@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-25T06:29:06.961Z",
+    "end": "2025-09-25T06:29:14.885Z",
+    "duration": 7924,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45d5fd96-e55d-4180-a140-e956ecacb66c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dealing-with-accessibility.cy.js",
+      "file": "cypress\\e2e\\dealing-with-accessibility.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2da85fcd-8311-4918-b2b2-38050b39ff01",
+          "title": "Accessibility checks",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have no detectable a11y violations on load",
+              "fullTitle": "Accessibility checks should have no detectable a11y violations on load",
+              "timedOut": null,
+              "duration": 7865,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\dealing-with-accessibility.cy.js\\\\Accessibility checks -- should have no detectable a11y violations on load (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://deals.androidauthority.com\");\ncy.injectAxe();\ncy.checkA11y();",
+              "err": {
+                "message": "AssertionError: 4 accessibility violations were detected: expected 4 to equal 0",
+                "estack": "AssertionError: 4 accessibility violations were detected: expected 4 to equal 0\n    at Context.eval (https://deals.androidauthority.com/__cypress/tests?p=cypress\\support\\e2e.js:1861:20)\n    at getRet (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:121565:20)\n    at tryCatcher (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:121576:66)\n    at Context.then (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:121827:21)\n    at wrapped (https://deals.androidauthority.com/__cypress/runner/cypress_runner.js:141533:19)",
+                "diff": null
+              },
+              "uuid": "68faba28-9acb-49fd-9758-8472b13cb62b",
+              "parentUUID": "2da85fcd-8311-4918-b2b2-38050b39ff01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "68faba28-9acb-49fd-9758-8472b13cb62b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

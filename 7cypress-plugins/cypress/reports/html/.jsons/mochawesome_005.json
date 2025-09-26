@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-22T10:30:53.225Z",
+    "end": "2025-09-22T10:31:04.628Z",
+    "duration": 11403,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eea0bb8d-b37b-48a7-a272-32ce8cf55b1f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dealing-with-hooks.cy.js",
+      "file": "cypress\\e2e\\dealing-with-hooks.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+          "title": "Android Authority Deals – Hook demo (before / after)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The title of the page is Tech Deals",
+              "fullTitle": "Android Authority Deals – Hook demo (before / after) The title of the page is Tech Deals",
+              "timedOut": null,
+              "duration": 2808,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", \"Tech Deals\");",
+              "err": {},
+              "uuid": "2fc25b0c-6ccf-4a87-b7a1-1a7a6c890177",
+              "parentUUID": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on Apps and Software and the URL is correct",
+              "fullTitle": "Android Authority Deals – Hook demo (before / after) Clicks on Apps and Software and the URL is correct",
+              "timedOut": null,
+              "duration": 4664,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/collections/apps-software\"]').click();\ncy.location(\"origin\", { timeout: 1e4 }).should(\n  \"eq\",\n  new URL(Cypress.config(\"baseUrl\")).origin\n);\ncy.location(\"pathname\", { timeout: 1e4 }).should(\n  \"eq\",\n  \"/collections/apps-software\"\n);",
+              "err": {},
+              "uuid": "17c2147e-6df3-419b-89f7-0cc0cda3b9be",
+              "parentUUID": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on Apps and Software only if link is visible, and checks the URL",
+              "fullTitle": "Android Authority Deals – Hook demo (before / after) Clicks on Apps and Software only if link is visible, and checks the URL",
+              "timedOut": null,
+              "duration": 1222,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/collections/apps-software\"]').then(($link) => {\n  if ($link.is(\":visible\")) {\n    cy.wrap($link).click();\n    cy.location(\"origin\", { timeout: 1e4 }).should(\n      \"eq\",\n      new URL(Cypress.config(\"baseUrl\")).origin\n    );\n    cy.location(\"pathname\", { timeout: 1e4 }).should(\n      \"eq\",\n      \"/collections/apps-software\"\n    );\n  } else {\n    cy.log(\n      'The \"Apps and Software\" link is not visible, skipping click'\n    );\n  }\n});",
+              "err": {},
+              "uuid": "07e3385f-3387-422d-9e36-96b93a85cce3",
+              "parentUUID": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on Apps and Software and the title is correct",
+              "fullTitle": "Android Authority Deals – Hook demo (before / after) Clicks on Apps and Software and the title is correct",
+              "timedOut": null,
+              "duration": 1467,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"a.chakra-link\", \"Apps & Software\").click();\ncy.title().should(\n  \"eq\",\n  \"Android Authority | Best Category: Apps & Software, Discounts & Sales - September 2025\"\n);",
+              "err": {},
+              "uuid": "5cef09d0-857a-4a08-8aaf-33acad40284c",
+              "parentUUID": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on the Apps and Software and the title is correct dynamically",
+              "fullTitle": "Android Authority Deals – Hook demo (before / after) Clicks on the Apps and Software and the title is correct dynamically",
+              "timedOut": null,
+              "duration": 1131,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a[href=\"/collections/apps-software\"]', \"Apps & Software\", {\n  matchCase: false\n}).click();\nconst now = /* @__PURE__ */ new Date();\nconst month = now.toLocaleString(\"en-US\", { month: \"long\" });\nconst year = now.getFullYear();\nconst expected = `Android Authority | Best Category: Apps & Software, Discounts & Sales - ${month} ${year}`;\ncy.title().should(\"eq\", expected);",
+              "err": {},
+              "uuid": "4871b7f7-11cf-4e73-9b0a-87457ee4c471",
+              "parentUUID": "332ffda3-6029-4c29-af74-7a88a3f41e67",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2fc25b0c-6ccf-4a87-b7a1-1a7a6c890177",
+            "17c2147e-6df3-419b-89f7-0cc0cda3b9be",
+            "07e3385f-3387-422d-9e36-96b93a85cce3",
+            "5cef09d0-857a-4a08-8aaf-33acad40284c",
+            "4871b7f7-11cf-4e73-9b0a-87457ee4c471"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11292,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}
