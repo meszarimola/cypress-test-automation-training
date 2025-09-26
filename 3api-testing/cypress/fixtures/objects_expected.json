@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "name": "Google Pixel 6 Pro",
+    "data": {
+      "color": "Cloudy White",
+      "capacity": "128 GB"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Apple iPhone 12 Mini, 256GB, Blue",
+    "data": null
+  },
+  {
+    "id": "3",
+    "name": "Apple iPhone 12 Pro Max",
+    "data": {
+      "color": "Cloudy White",
+      "capacity GB": 512
+    }
+  },
+  {
+    "id": "7",
+    "name": "Apple MacBook Pro 16",
+    "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "Intel Core i9",
+      "Hard disk size": "1 TB"
+    }
+  }
+]
